@@ -21,8 +21,7 @@ public class TakesScreenshotPartial {
 
 	public static void main(String[] args) throws IOException, InterruptedException {
 		// Set the driver path
-		System.setProperty("webdriver.chrome.driver",
-				"C:\\SELENIUM\\browser-driver\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\Driver\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 
